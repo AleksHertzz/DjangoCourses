@@ -4,21 +4,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
+
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body class="bg">
     <header class="header">
         <a href="{% url "oursite:product_list" %}"><img class="logotip-sova" src="{% static 'images/logotip-sova.png' %}" alt=""></a>
         <a href="{% url "oursite:product_list" %}"><img class="logotip-nazvanie" src="{% static 'images/logotip-nazvanie.png' %}" alt=""></a>
-      <a class="" href="{% url "oursite:product_list" %}"><p class="headerText1">Курсы</p></a>
-      <a class="" href="{% url "oursite:collaboration" %}"><p class="headerText3">Сотрудничество</p></a>
-      <a class="" href="{% url "oursite:contacts" %}"><p class="headerText4">Контакты</p></a>
-        <div class="headertext5">
-      <form action="{% url 'oursite:search' %}" method="get">
-          <input name="q" type="text" placeholder="Search..." style="width: 200px; margin-left: -25px;">
+        <nav class="container">
+
+      <a class="text1" href="{% url "oursite:product_list" %}">Курсы</a>
+      <a class="text2" href="{% url "oursite:collaboration" %}">Сотрудничество</a>
+      <a class="text3" href="{% url "oursite:contacts" %}">Контакты</a>
+
+      <form class="s" action="{% url 'oursite:search' %}" method="get" style="display: inline; padding-bottom: 20px;">
+          <input class="s" name="q" type="text" placeholder="Search..." >
       </form>
-        </div>
         <img class="loopa" src="{% static 'images/v20_10.png' %}" alt="">
         {% if request.user.is_authenticated %}
       <div class="login">
@@ -33,9 +36,10 @@
       <div class="register">
           <a class="register_" href="{% url "oursite:razrab" %}">Стать профи</a>
       </div>
-
+</nav>
       <a class="" href="{% url "oursite:profile" %}"> <img class="profile" src="{% static 'images/jake.png' %}" alt=""></a>
         <a href="{% url "cart:cart_detail" %}"><img class="cartImg" src="{% static 'images/cart.png' %}" alt=""></a>
+
     </header>
 
     <aside class="menu-container">
@@ -47,4 +51,183 @@
     {% endblock %}
 </div>
 </body>
+<style>
+    @media screen and (max-width:1650px) {
+    .text3 {
+        display: none;
+    }
+
+    .logotip-sova{
+
+    }
+
+    .logotip-nazvanie{
+    }
+}
+@media screen and (max-width:1500px) {
+    .text3 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+
+    .logotip-sova{
+
+    }
+
+    .logotip-nazvanie{
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .text3 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+    .text1 {
+        display: none;
+    }
+
+    .logotip-sova{
+
+    }
+
+    .logotip-nazvanie{
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .text3 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+    .text1 {
+        display: none;
+    }
+    .s{
+    display: none;
+    }
+
+    .loopa{
+    display: none;
+    }
+
+    .logotip-sova{
+
+    }
+
+    .logotip-nazvanie{
+    }
+}
+
+@media screen and (max-width:880px) {
+    .text3 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+    .text1 {
+        display: none;
+    }
+    .s{
+    display: none;
+    }
+
+    .loopa{
+    display: none;
+    }
+
+    .logotip-sova{
+
+    }
+
+    .logotip-nazvanie{
+    }
+
+    .profile{
+    position: absolute;
+    left: 400px;
+    top: 15px;
+    }
+
+    .cartImg{
+    position: absolute;
+    left: 530px;
+    top: 15px;
+    }
+
+    .login{
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    }
+
+    .register{
+    position: absolute;
+    left: 515px;
+    top: 70px;
+
+    }
+}
+
+@media screen and (max-width:400px) {
+    .text3 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+    .text1 {
+        display: none;
+    }
+    .s{
+    display: none;
+    }
+
+    .profile{
+    position: absolute;
+    left: 90px;
+    top: 15px;
+    }
+
+    .cartImg{
+    position: absolute;
+    left: 210px;
+    top: 15px;
+    }
+
+    .login{
+    position: absolute;
+    left: 90px;
+    top: 70px;
+    }
+
+    .register{
+    position: absolute;
+    left: 190px;
+    top: 70px;
+
+    }
+
+    .loopa{
+    display: none;
+    }
+
+    .logotip-sova{
+    left: 10;
+    }
+
+    .logotip-nazvanie{
+    display: none;
+    }
+}
+</style>
+
+
 </html>

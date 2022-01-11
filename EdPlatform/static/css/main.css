@@ -7,10 +7,10 @@
 
 .header{
     width: 100%;
-    background: #00A6A3;
     height: 100px;
-    position: relative;
-
+    background: #00A6A3;
+    display: flex;
+    align-items: center;
 }
 
 .name{
@@ -28,130 +28,68 @@
 .helptext{
 display: none;
 }
+.profile{
+height: 50px;
+margin-top: 100px;
 
-.headerText1{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 23%;
-    bottom: 0;
-    margin: auto 0;
 }
+.text1{
 
 
-.headerText3{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 29.6%;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.headerText4{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 43.5%;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.headerText5{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 1000;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.loopa{
+padding-top: 20px;
+text-decoration: none;
 color: #FFFFFF;
-    font-size: 18;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 3%;
-    left: 1180;
-    bottom: 0;
-    margin: auto 0;
+display: inline-block;
+    font-size: 25;
+    height: 50px;
+    margin-right: 40px;
+
+
 }
 
-.search-form {
-  position: absolute;
-  top: 52%;
-  left: 1090;
-  width: 198px;
-  height: 30px;
-  border-radius: 40px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  transform: translate(-50%, -50%);
-  background: #fff;
-  transition: all 0.3s ease;
+.text2{
+text-decoration: none;
+display: inline-block;
+color: #FFFFFF;
+    font-size: 25;
+    height: 50px;
+    margin-right: 40px;
 }
 
-.search-input {
-  position: absolute;
-  top: 5px;
-  left: 20px;
-  font-size: 14px;
-  background: none;
-  color: #5a6674;
-  width: 195px;
-  height: 20px;
-  border: none;
-  appearance: none;
-  outline: none;
+.text3{
 
-  &::-webkit-search-cancel-button {
-    appearance: none;
-  }
+text-decoration: none;
+display: inline-block;
+color: #FFFFFF;
+    font-size: 25;
+    height: 50px;
+    margin-right: 40px;
+}
+.container{
+margin-left: 400px;
+
 }
 
-.search-button {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-  outline: none!important;
-  cursor: pointer;
 
-  & svg {
-    width: 20px;
-    height: 20px;
-    fill: #5a6674;
-  }
-}
 
 .login{
     box-sizing: content-box;
-    width:85;
-    height: 30;
     border: 1px solid white;
     font-size: 16;
-    position: absolute;
-    top: 5%;
-    left: 1232;
-    bottom: 0;
-    margin: auto 0;
+    display: inline;
+    width:85;
+    height: 30;
+
+    margin-right: 40px;
     border-radius: 3px;
     text-align: center;
     color: #FFFFFF;
 
+}
+.loopa{
+
+
+margin-right: 20px;
 }
 
 .login_{
@@ -171,11 +109,8 @@ color: #FFFFFF;
     height: 30;
     border: 1px solid white;
     font-size: 16;
-    position: absolute;
-    top: 5%;
-    left: 1330;
-    bottom: 0;
-    margin: auto 0;
+    display: inline;
+    margin-right: 40px;
     border-radius: 3px;
     text-align: center;
     color: #FFFFFF;
@@ -201,32 +136,28 @@ color: #FFFFFF;
 }
 
 .logotip-sova{
-height: 90px;
-padding-top: 5px;
-padding-left: 100px;
+height: 80px;
+position: absolute;
+top: 20px;
+left: 100px;
 }
 
 .logotip-nazvanie{
-height: 90px;
-padding-top: 5px;
-padding-left: 10px;
+position: absolute;
+height: 80px;
+top: 20px;
+left: 200px;
 }
 
 .profile{
     height: 50px;
-    position: absolute;
-    top: 0;
-    left: 1489;
-    bottom: 0;
+
     margin: auto 20;
 }
 
 .cartImg{
 height: 50px;
-    position: absolute;
-    top: 10;
-    left: 1570;
-    bottom: 0;
+
     margin: auto 20;
 
 }
@@ -298,8 +229,9 @@ height: 65px; width:509px; padding-top: 35px; position: relative; vertical-align
 }
 
 .bg{
+    width: 100%;
     background: url(../images/backk.png);
-    background-size: 1920px auto;
+    background-size: 100% auto;
 
     repeat-y;
 }

@@ -14,6 +14,7 @@
                 <a href="{% url "oursite:product_list" %}">All</a>
             </li>
                 <option value="">Выберите категорию</option>
+
                 <option value="{% url "oursite:product_list" %}">Все курсы</option>
             {% for c in categories %}
                 <li {% if category.slug == c.slug %}class="selected"{% endif %}>
@@ -85,22 +86,64 @@
 
 </script>
 <style>
+    @media screen and (max-width:1800px) {
+    .item{
+    padding-top: 10px;
+     float: left;
+     margin-left: 100px;
+     background: #FFFFFF;
+     background-color: #FFFFFF;
+     width: 470px;
+     height: 460px;
+     margin-right: 67px;
+     text-align: center;
+     margin-bottom: 55px;
+     border: 8px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+    @media screen and (max-width:1800px) {
+    .chooseCategory{
+    position: absolute;
+    padding-top: 30px;
+    }
+
+}
+    @media screen and (max-width:1200px) {
+    .chooseCategory{
+    position: absolute;
+    left: -10%;
+    padding-top: 30px;
+    }
+
+}
+    @media screen and (max-width:500px) {
+    .1{
+    hidden;
+    }
+    .2{
+    display;
+    }
+
+}
+
 
     .products{
-    padding-left: 18px;
+
     position: absolute;
     }
 
     .chooseCategory{
     position: absolute;
-    padding-left: 72%;
+    margin-left: 82%;
     padding-top: 30px;
     }
 
     .headerr{
     padding-left: 18px;
     background: #FFFFFF;
-    width: 1570px;
+    width: 98.6%;
     height: 75px;
     margin-bottom: 20px;
     border: 2px solid transparent;
@@ -108,6 +151,7 @@
     }
     .item{
     padding-top: 10px;
+    margin-left: 60px;
      float: left;
      background: #FFFFFF;
      background-color: #FFFFFF;
@@ -145,8 +189,9 @@
     }
 
     .product-list{
+       width: 100%;
     display: inline-block;
-    padding-left: 100px;
+
     }
 
     .price{

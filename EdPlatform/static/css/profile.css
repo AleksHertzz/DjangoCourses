@@ -5,13 +5,7 @@
 
 
 
-.header{
-    width: 100%;
-    background: #00A6A3;
-    height: 100px;
-    position: relative;
 
-}
 
 .name{
     color: #FFFFFF;
@@ -29,126 +23,9 @@
 display: none;
 }
 
-.headerText1{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 549;
-    bottom: 0;
-    margin: auto 0;
-}
 
-.headerText2{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 640;
-    bottom: 0;
-    margin: auto 0;
-}
 
-.headerText3{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 751;
-    bottom: 0;
-    margin: auto 0;
-}
 
-.headerText4{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 896;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.search-form {
-  position: absolute;
-  top: 52%;
-  left: 1090;
-  width: 198px;
-  height: 30px;
-  border-radius: 40px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  transform: translate(-50%, -50%);
-  background: #fff;
-  transition: all 0.3s ease;
-}
-
-.search-input {
-  position: absolute;
-  top: 5px;
-  left: 20px;
-  font-size: 14px;
-  background: none;
-  color: #5a6674;
-  width: 195px;
-  height: 20px;
-  border: none;
-  appearance: none;
-  outline: none;
-
-  &::-webkit-search-cancel-button {
-    appearance: none;
-  }
-}
-
-.search-button {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-  outline: none!important;
-  cursor: pointer;
-
-  & svg {
-    width: 20px;
-    height: 20px;
-    fill: #5a6674;
-  }
-}
-
-.login{
-    box-sizing: content-box;
-    width:85;
-    height: 30;
-    border: 1px solid white;
-    font-size: 16;
-    position: absolute;
-    top: 5%;
-    left: 1232;
-    bottom: 0;
-    margin: auto 0;
-    border-radius: 3px;
-    text-align: center;
-    color: #FFFFFF;
-
-}
-
-.login_{
-text-align: center;
-padding-top: 10px;
-margin-top: 10px;
-color: #FFFFFF;
-    alink: #FFFFFF;
-    text-decoration: none;
-}
 
 .razrab{
 width: 300px;
@@ -174,73 +51,8 @@ color: #9F7100;
     alink: #9F7100;
     text-decoration: none;
 }
-.headerText1{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 23%;
-    bottom: 0;
-    margin: auto 0;
-}
 
 
-.headerText3{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 29.6%;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.headerText4{
-    color: #FFFFFF;
-    font-size: 25;
-    height: 50px;
-    position: absolute;
-    top: 18%;
-    left: 43.5%;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.headerText5{
-    color: #FFFFFF;
-    font-size: 18;
-    height: 50px;
-    position: absolute;
-    top: 29%;
-    left: 1000;
-    bottom: 0;
-    margin: auto 0;
-}
-.register{
-    box-sizing: content-box;
-    background: #4799CB;
-    width:130;
-    height: 30;
-    border: 1px solid white;
-    font-size: 16;
-    position: absolute;
-    top: 5%;
-    left: 1330;
-    bottom: 0;
-    margin: auto 0;
-    border-radius: 3px;
-    text-align: center;
-    color: #FFFFFF;
-    alink: #FFFFFF;
-}
-
-.register_{
-color: #FFFFFF;
-    alink: #FFFFFF;
-    text-decoration: none;
-    }
 
 .inText1{
     color: #FFFFFF;
@@ -253,14 +65,6 @@ color: #FFFFFF;
 
 }
 
-.profile{
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 1489;
-    bottom: 0;
-    margin: auto 20;
-}
 
 .eye{
     height: 50 px;
@@ -347,9 +151,6 @@ height: 25px; width:260px; position: relative; vertical-align: middle; margin-bo
     border-radius: 10px;
 }
 
-.bg{
-
-}
 
 
 label{

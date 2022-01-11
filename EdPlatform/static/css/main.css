@@ -6,7 +6,7 @@
 
 
 .header{
-    width: 100%;
+    width: 99.8%;
     height: 100px;
     background: #00A6A3;
     display: flex;
@@ -229,9 +229,9 @@ height: 65px; width:509px; padding-top: 35px; position: relative; vertical-align
 }
 
 .bg{
-    width: 100%;
+    width: 99.5%;
     background: url(../images/backk.png);
-    background-size: 100% auto;
+    background-size: 99.99% auto;
 
     repeat-y;
 }
